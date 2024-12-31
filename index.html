@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Hello Dear</h1>
+    <div class="input">
+      <input type="username" id="username" placeholder="Enter your username">
+</div>
+<div class="input">
+    <input type="password" id="password" placeholder="Enter password">
+</div>
+<div>
+    <button id="login" onclick="privatepage()">login</button>
+</div>
+</div>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background-image:url(img7.jpg);
+        height: 100vh;
+        width: 100vw;
+        background-attachment: fixed;
+        background-size:cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    h1{
+        margin: 10px auto;
+        color: rgb(152, 201, 17);
+    }
+    .container{
+        border: none;
+        height: 250px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto;
+        border-radius: 10px;
+        border: 2px solid green;
+        box-shadow: 6px 6px 10px rgb(12, 207, 132);
+        opacity: 0.9;
+    
+    }
+    input{
+        width: 270px;
+        height: 30px;
+        border-radius: 5px;
+        margin-left: 14px;
+        margin-top: 10px;
+        font-size: 20px;
+        background-color:transparent;
+        border: 3px solid rgb(7, 165, 105);
+        color: yellow;
+    }
+    #login{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        margin-left:100px;
+        margin-top: 40px;
+        font-size: 20px;
+        border: 2px solid rgb(14, 211, 162);
+        background-color: transparent;
+        color: aquamarine;
+        position: relative;
+    }
+</style>
+<script>
+    function privatepage() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if(username === 'Avadesh Umaraiya' && password === 'Avadesh@123'){
+                window.location.href = "photos.html";
+                alert("welcome Mr. Avadesh");
+            } else {
+                alert("Username or Password is wrong");
+            }
+        }
+</script>
+</body>
+</html>
